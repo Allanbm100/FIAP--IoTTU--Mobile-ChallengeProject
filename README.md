@@ -8,14 +8,11 @@ Este aplicativo mobile complementa o sistema IoTTU, fornecendo acesso móvel a t
 
 ## 👥 Autores
 
-| Nome Completo | RM | GitHub |
-|--------------|-----|--------|
 | **Allan Brito Moreira** | RM558948 | [@Allanbm100](https://github.com/Allanbm100) |
-| **Caio Liang** | RM558868 | [@caioliang](https://github.com/caioliang) |
-| **Levi Magni** | RM98276 | [@levmagni](https://github.com/levmagni) |
+| **Caio Liang**          | RM558868 | [@caioliang](https://github.com/caioliang)   |
+| **Levi Magni**          | RM98276  | [@levmagni](https://github.com/levmn)        |
 
 ---
-
 
 ## 🚀 Funcionalidades
 
@@ -246,34 +243,6 @@ npx expo start
 
 Isso abrirá o Expo DevTools no navegador.
 
-#### 5. Execute no Dispositivo/Emulador
-
-**Opção A: Dispositivo Físico**
-1. Instale o app **Expo Go** no seu dispositivo ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779))
-2. Escaneie o QR code exibido no terminal ou navegador
-3. O app será carregado automaticamente
-
-**Opção B: Emulador Android**
-```bash
-npm run android
-# ou
-yarn android
-```
-
-**Opção C: Simulador iOS** (somente macOS)
-```bash
-npm run ios
-# ou
-yarn ios
-```
-
-**Opção D: Navegador Web**
-```bash
-npm run web
-# ou
-yarn web
-```
-
 ### Comandos Disponíveis
 
 ```bash
@@ -306,30 +275,6 @@ Solução: Verifique se o backend está rodando e se a URL no api.ts está corre
 npx expo start --clear
 npm install
 ```
-
-**Problema: Erro em dispositivo Android**
-```bash
-# Verifique as permissões de rede no AndroidManifest.xml
-# Certifique-se de que está usando HTTP (não HTTPS) para desenvolvimento local
-```
-
----
-
-## 📱 Screenshots
-
-*(Em desenvolvimento - Screenshots serão adicionados em breve)*
-
-### Telas Implementadas
-- Login e Registro
-- Home com seletor de idioma
-- Lista de Antenas
-- Formulário de Antena
-- Lista de Motocicletas
-- Formulário de Motocicleta
-- Lista de Pátios
-- Formulário de Pátio
-- Lista de Tags
-- Formulário de Tag
 
 ---
 
@@ -382,110 +327,6 @@ O aplicativo consome os seguintes endpoints da API REST:
 - `PUT /api/v1/antennas/{id}` - Atualizar antena
 - `DELETE /api/v1/antennas/{id}` - Deletar antena
 
-### Documentação da API
-
-Para mais detalhes sobre os endpoints, tipos de dados e exemplos de requisições:
-- **Swagger UI**: http://localhost:8080/swagger-ui.html (quando o backend estiver rodando)
-
----
-
-## 🏆 Requisitos Atendidos - Sprint 4
-
-### ✅ Implementado (70 pontos)
-
-#### 1. Implementação funcional de todas as telas (30 pontos)
-- [x] Todas as telas planejadas presentes e 100% funcionais
-- [x] Navegação integrada e fluida (Stack + Tab Navigation)
-- [x] Tratamento completo de formulários com validações
-- [x] Mensagens de erro e feedback ao usuário
-- [x] Indicadores de carregamento em chamadas de rede (ActivityIndicator)
-- [x] Todos os botões, interações e chamadas de API operacionais
-
-#### 4. Integração com API (10 pontos)
-- [x] 4 funcionalidades CRUD completas implementadas:
-  - Antenas (Create, Read, Update, Delete)
-  - Motocicletas (Create, Read, Update, Delete)
-  - Pátios (Create, Read, Update, Delete)
-  - Tags (Create, Read, Update, Delete)
-- [x] Tratamento completo de formulários com validações
-- [x] Indicadores de carregamento em todas as chamadas de rede
-- [x] Mensagens de erro amigáveis usando extractErrorMessage
-
-#### 5. Localização e Internacionalização (10 pontos)
-- [x] Suporte aos idiomas Português (PT-BR) e Espanhol (ES)
-- [x] Bônus: Inglês (EN-US) também implementado
-- [x] Todas as strings visíveis traduzidas (242+ strings por idioma)
-- [x] Gerenciamento via i18next com arquivos JSON
-- [x] Troca dinâmica de idioma na tela Home
-
-#### 6. Estilização com Tema (10 pontos)
-- [x] Modo claro e modo escuro implementados
-- [x] Personalização visual consistente (Theme.ts)
-- [x] Paleta de cores, fontes e espaçamentos padronizados
-- [x] Seguindo guidelines de Material Design
-- [x] Identidade visual coerente em todas as telas
-- [x] Alternância de tema através do ThemeContext
-
-#### 7. Arquitetura de Código (10 pontos)
-- [x] Organização lógica de arquivos e pastas
-- [x] Nomeação clara e padronizada
-- [x] Separação adequada de responsabilidades:
-  - `/components` - Componentes reutilizáveis
-  - `/screens` - Telas do app
-  - `/services` - Integração com API
-  - `/contexts` - Estado global
-  - `/utils` - Utilitários
-  - `/styles` - Estilos e tema
-  - `/locales` - Traduções
-- [x] Código limpo e legível com TypeScript
-- [x] Uso de boas práticas React Native
-- [x] Bibliotecas relevantes e atualizadas
-
-### 🔄 Em Desenvolvimento (30 pontos)
-
-#### 2. Publicação do app (10 pontos)
-- [ ] Firebase App Distribution configurado
-- [ ] E-mail do professor adicionado como tester
-- [ ] Tela "Sobre o App" com hash do commit
-- [ ] Versão publicada correspondente ao código-fonte
-
-#### 3. Notificação via Push (10 pontos)
-- [ ] Implementação de notificações push
-- [ ] Permissões configuradas
-- [ ] Handlers de notificação
-
-#### 8. Documentação e Apresentação (10 pontos)
-- [x] README.md completo com:
-  - Nome do app
-  - Proposta e funcionalidades
-  - Estrutura de pastas
-  - Nome, RM e GitHub de todos os integrantes
-- [ ] Vídeo demonstrando o app em funcionamento
-
-### 📊 Pontuação Estimada
-
-| Critério | Pontos Possíveis | Pontos Obtidos | Status |
-|----------|------------------|----------------|---------|
-| Implementação de telas | 30 | 30 | ✅ |
-| Publicação do app | 10 | 0 | 🔄 |
-| Notificação Push | 10 | 0 | 🔄 |
-| Integração com API | 10 | 10 | ✅ |
-| Internacionalização | 10 | 10 | ✅ |
-| Estilização com Tema | 10 | 10 | ✅ |
-| Arquitetura de Código | 10 | 10 | ✅ |
-| Documentação | 10 | 10 | ✅ |
-| **TOTAL** | **100** | **80** | **80%** |
-
----
-
-## 👥 Integrantes do Grupo
-
-| Nome Completo | RM | GitHub |
-|--------------|-----|--------|
-| **Allan Brito Moreira** | RM558948 | [@Allanbm100](https://github.com/Allanbm100) |
-| **Caio Liang** | RM558868 | [@caioliang](https://github.com/caioliang) |
-| **Levi Magni** | RM98276 | [@levmagni](https://github.com/levmagni) |
-
 ---
 
 ## 📄 Licença
@@ -494,87 +335,3 @@ Este projeto foi desenvolvido como parte do **Challenge 2025 da FIAP** - Turma 2
 Destinado exclusivamente para fins educacionais e acadêmicos.
 
 ---
-
-## 📞 Contato
-
-Para dúvidas, sugestões ou contribuições, entre em contato através:
-- **GitHub Issues**: [Criar issue](https://github.com/Allanbm100/FIAP--IoTTU--Mobile-ChallengeProject/issues)
-- **Email**: Consultar perfis dos integrantes no GitHub
-
----
-
-## 🙏 Agradecimentos
-
-- **FIAP** - Pela oportunidade e infraestrutura para desenvolvimento do projeto
-- **Professores e Mentores** - Pelo suporte técnico e orientação durante todo o desenvolvimento
-- **Comunidade React Native** - Pelas bibliotecas open-source e documentação
-- **Expo Team** - Pelas ferramentas que facilitaram o desenvolvimento
-- **TanStack Team** - Pelo React Query que otimizou o gerenciamento de dados
-- **Colegas de Turma** - Pelo apoio e colaboração
-
----
-
-## 📚 Recursos Adicionais
-
-### Documentação das Tecnologias
-- [React Native Documentation](https://reactnative.dev/docs/getting-started)
-- [Expo Documentation](https://docs.expo.dev/)
-- [React Navigation](https://reactnavigation.org/docs/getting-started)
-- [React Query (TanStack)](https://tanstack.com/query/latest/docs/react/overview)
-- [i18next](https://www.i18next.com/)
-
-### Repositórios Relacionados
-- [Backend Java](https://github.com/Allanbm100/FIAP--IoTTU--Java-ChallengeProject) - API REST e sistema IoT
-
-### Links Úteis
-- [Challenge 2025 - Documentação](link-se-disponível)
-- [Apresentação do Projeto](link-se-disponível)
-- [Vídeo Demonstrativo](link-quando-disponível)
-
----
-
-## 🔮 Roadmap Futuro
-
-### Funcionalidades Planejadas
-- [ ] Implementação de notificações push
-- [ ] Visualização em mapa das motocicletas em tempo real
-- [ ] Gráficos e relatórios de movimentação
-- [ ] Modo offline com sincronização
-- [ ] Biometria para autenticação
-- [ ] Integração com câmera para scan de QR Code
-- [ ] Histórico de movimentações
-- [ ] Filtros avançados nas listagens
-- [ ] Export de dados em PDF/Excel
-- [ ] Dashboard administrativo
-
-### Melhorias Técnicas
-- [ ] Testes unitários com Jest
-- [ ] Testes E2E com Detox
-- [ ] CI/CD com GitHub Actions
-- [ ] Monitoramento de erros com Sentry
-- [ ] Analytics com Firebase Analytics
-- [ ] Performance monitoring
-- [ ] Otimização de imagens
-- [ ] Code splitting
-- [ ] Acessibilidade (A11y) aprimorada
-
----
-
-**Desenvolvido com ❤️ e ☕ pelos estudantes da FIAP - Challenge 2025**
-
----
-
-## 📌 Notas de Versão
-
-### v1.0.0 (Novembro 2025)
-- ✨ Versão inicial com todas as funcionalidades core
-- 🔐 Sistema de autenticação completo
-- 📱 CRUD completo para 4 entidades
-- 🌍 Internacionalização (PT, EN, ES)
-- 🎨 Tema claro e escuro
-- 📡 Integração total com API backend
-- 📚 Documentação completa
-
----
-
-*Última atualização: Novembro de 2025*
