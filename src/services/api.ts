@@ -1,7 +1,7 @@
 import axios from 'axios';
 import i18n from '../i18n';
 
-const API_URL = "http://10.0.2.2:8080/api/v1";
+const API_URL = "https://iottu-java.azurewebsites.net/api/v1";
 
 const api = axios.create({
   baseURL: API_URL,
